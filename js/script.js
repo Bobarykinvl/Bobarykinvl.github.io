@@ -26,6 +26,12 @@ window.onload = function(){
         mob_menu.style = "display:block;";
       }
     };
+    let menu = document.querySelector('nav ul');
+    window.onresize = function () {
+      if(screen.width > "720"){
+        menu.style = "display:'block'";
+      }
+    }
   }
   showMobileMenu();
 }
